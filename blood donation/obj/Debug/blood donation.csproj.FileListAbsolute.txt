@@ -1,0 +1,34 @@
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\bin\Debug\blood donation.exe.config
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\bin\Debug\blood donation.exe
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\bin\Debug\blood donation.pdb
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\obj\Debug\blood donation.csprojResolveAssemblyReference.cache
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.Properties.Resources.resources
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\obj\Debug\blood donation.csproj.GenerateResource.Cache
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\obj\Debug\blood donation.exe
+c:\users\jotyj\onedrive\documents\visual studio 2015\Projects\blood donation\blood donation\obj\Debug\blood donation.pdb
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.HOMEPAGE.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.DONOR_LIST.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.BE_A_DONOR.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.LOGIN.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.FORGOT_PASSWORD.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.RULES.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.ChangePassword.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.profile.resources
+C:\Users\jotyj\OneDrive\Documents\Visual Studio 2015\Projects\blood donation\blood donation\obj\Debug\blood_donation.SEARCH.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\bin\Debug\blood donation.exe.config
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood donation.exe
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood donation.pdb
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\bin\Debug\blood donation.exe
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\bin\Debug\blood donation.pdb
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood donation.csprojResolveAssemblyReference.cache
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.FORGOT_PASSWORD.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.ChangePassword.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.HOMEPAGE.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.DONOR_LIST.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.BE_A_DONOR.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.profile.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.LOGIN.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.Properties.Resources.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.RULES.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood_donation.SEARCH.resources
+F:\AIUB\Department Study\Advance Database Management System\PROJECT\blood donation\blood donation\obj\Debug\blood donation.csproj.GenerateResource.Cache
