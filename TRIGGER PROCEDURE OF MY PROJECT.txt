@@ -1,0 +1,143 @@
+1.create or replace trigger DONOR_REG
+before insert or update or delete on DONOR
+declare 
+begin
+ IF  to_number(to_char(SYSDATE,'hh24')) < 8
+     or to_number(to_char(SYSDATE,'hh24')) >= 23  THEN
+     RAISE_APPLICATION_ERROR (-20500, 'REGISTRATION IS NOT ALLOWED IN THIS TIME');
+ END IF;
+end; 
+
+
+2.CREATE TABLE LOGIN_UP_LOG
+       (USER_NAME VARCHAR2(1000),
+	OLD_PASSWORD VARCHAR2(1000),
+	NEW_PASSWORD VARCHAR2(1000) ) ;
+
+create or replace trigger LOGIN_UP
+after update of PASSWORD on LOGIN
+for each row
+
+begin
+insert into LOGIN_UP_LOG values (:old.USER_NAME,:old.PASSWORD,:new.PASSWORD);
+end; 
+
+insert into SAL_UP_LOG values ('ALEYA',100,200);
+
+SELECT * FROM LOGIN;
+UPDATE LOGIN
+SET PASSWORD='123'
+WHERE USER_NAME='JINN';
+
+drop trigger LOGIN_UP;
+
+3.create or replace trigger LOGIN
+before insert or update or delete on LOGIN
+declare 
+begin
+ IF  to_number(to_char(SYSDATE,'hh24')) < 8
+     or to_number(to_char(SYSDATE,'hh24')) >= 23  THEN
+     RAISE_APPLICATION_ERROR (-20500, 'UPDATE IS NOT ALLOWED IN THIS TIME');
+ END IF;
+end; 
+
+4.create table Task_log
+(u_name varchar(1000),t_date DATE,TaskType varchar(1000) )
+
+create or replace trigger DONOR_TASK_LOG
+After insert or Update or delete on DONOR
+
+Declare
+Task_Type varchar(1000); 
+Begin
+If(Inserting) then
+Task_Type :='Inserting';
+
+ElsIf (Updating) then
+Task_Type :='Updating';
+
+ElsIF (Deleting) then
+Task_Type :='Deleting';
+
+End If;
+
+Insert into task_log values(user,sysdate,Task_Type);
+End;
+SELECT * FROM task_log;
+UPDATE DONOR SET AGE=50 WHERE DONOR_NAME='JINNAT'; 
+
+
+5.
+create or replace function donate_date(u_name donor.DONOR_NAME%type)
+return DONOR.LAST_DONATION_DATE%type
+Is
+l_donate donor.last_donation_date%type;
+begin 
+select LAST_DONATION_DATE into l_donate from donor where DONOR_name = u_name;
+return l_donate;
+end
+
+declare
+c date;
+begin
+c:=donate_date('SIDDIKA');
+dbms_output.put_line(c);
+end
+
+
+6.
+create or replace function BLOOD_PACK(B_GROUP DONOR.BLOOD_GROUP%TYPE)
+return number
+is
+volume number;
+begin
+select count(*) into volume from DONOR where B_GROUP=BLOOD_GROUP;
+return volume;
+end;
+
+7.
+
+create or replace procedure auto_update(last_date donor.last_donation_date%type, nage donor.age%type, usr donor.donor_name%type)
+is
+update_id number;
+begin
+select max(id)+1 into update_id from donor;
+UPDATE donor
+SET last_donation_date=last_date, age=nage
+WHERE donor_name=usr;
+end;
+
+
+8.
+
+create or replace function VALID_BLOOD(B_GROUP BLOOD_COST.BLOOD_GROUP%TYPE)
+return Boolean
+IS
+cursor c1
+is
+select BLOOD_GROUP from BLOOD_COST;
+begin
+for i in c1 loop
+IF(i.BLOOD_GROUP=B_GROUP) then
+return true;
+END IF;
+END LOOP;
+return false;
+end;
+
+
+create or replace procedure b_cost(ID blood_cost.blood_ID_NO%type,B_GROUP BLOOD_COST.BLOOD_GROUP%TYPE,cost blood_cost.blood_cost%type)
+IS
+
+begin
+IF (VALID_BLOOD(B_GROUP)) then
+INSERT INTO BLOOD_COST VALUES (ID,B_GROUP,COST);
+
+ELSE
+dbms_output.put_line('BLOOD did not match');
+END IF;
+end;
+
+9.
+
+
